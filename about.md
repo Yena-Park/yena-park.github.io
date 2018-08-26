@@ -1,8 +1,8 @@
 # Yena
 <hr>
 - Web developer
-- **[Github Profile](https://github.com/Yena-Park)   
-- **[Linkedin](https://www.linkedin.com/in/yenapark/)
+- **[Github Profile](https://github.com/Yena-Park)**   
+- **[Linkedin](https://www.linkedin.com/in/yenapark/)**
 
 # Skills
 <hr>
