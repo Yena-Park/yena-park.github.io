@@ -1,13 +1,13 @@
 # Site settings
 title:          yena.blog
-description:    "Minimal Jekyll theme for storytellers"
+description:    
 url:            "https://yena-park.github.io"
 
 # Author
 author:
-  name:         Chester How
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+  name:         Yena Park
+  url:          https://yena-park.github.io
+  email:        yena8317@gmail.com
 
 # Build settings
 markdown:       kramdown
