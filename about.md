@@ -1,15 +1,31 @@
----
-layout: post
-title: "About"
-author: "Chester"
-permalink: /about/
----
+# Yena
+<hr>
+- Web developer
+- **[Github Profile](https://github.com/Yena-Park)   
+- **[Linkedin](https://www.linkedin.com/in/yenapark/)
 
-A friend of mine writes short stories. One sunny day, I asked if he wanted a website to showcase his works and he agreed. I decided to use GitHub Pages to host his site. That way he wouldn't have to buy a domain and a server.
+# Skills
+<hr>
+- JavaScript   
+- React
 
-While doing some research up on GitHub Pages, I accidentally chanced upon this _simple, blog-aware, static site generator_ called [Jekyll](https://jekyllrb.com/) which works really well with GitHub Pages. I figured it would do just fine for my friend and I set about searching for a pretty theme. I wanted a theme with a _book-ish_ vibe. Unfortunately, most of the themes were too modern. Eventually, I caved and begun working on my own theme. With the help of [Poole](https://github.com/poole/poole), the Jekyll Butler, I was able to build **Tale**.
+# Projects
+<hr>
 
-## Contribute
-Feel free to create an issue or make a pull request on [GitHub](https://github.com/chesterhow/tale).
+# Education
+- **2014** Kwangwoon University, Electronic Material Engineering[Bachelor] (Korea, Seoul)
+- **2019** Sheridan College, Software Development Network Engineering[Deploma] (Canada, Oakville)
 
-Thanks for reading!
+# Online Course
+<hr>
+#### [React Router and Redux](https://www.edx.org/course/react-router-and-redux)
+
+# Standby
+<hr>
+- [node JS](https://www.udemy.com/understand-nodejs/learn/v4/overview)
+- [GraphQL with React](https://www.udemy.com/graphql-with-react-course/)
+
+# Languages
+- 🇺🇸 **English** : Toeic Speaking Level 7
+- 🇨🇳 **Chinese** : 新 HSK 5级, OPIc Chinese IH
+- 🇰🇷 **Korean** : Native 
