@@ -6,6 +6,7 @@ Tale is a minimal Jekyll theme curated for storytellers. Checkout the demo [here
 
 ![Tale screenshot](http://i.imgur.com/pXZrtmo.png)
 
+
 ## Features
 - Easy installation
 - Compatible with GitHub Pages
