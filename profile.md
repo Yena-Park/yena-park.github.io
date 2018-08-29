@@ -22,6 +22,7 @@
 # Online Course
 <hr>
 #### [ES6 JavaScript: The Complete Developer's Guide](https://www.udemy.com/javascript-es6-tutorial/)
+#### [React Basic](https://www.inflearn.com/course/react-velopert/)
 #### [React Router and Redux](https://www.edx.org/course/react-router-and-redux)
 
 # Standby
