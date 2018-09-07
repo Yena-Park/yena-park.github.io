@@ -4,7 +4,7 @@ title:  "[React] Component Styling"
 author: "Yena Park"
 ---
 
-3 ways to style react component.
+3 ways to style react component
 
 ## CSS module
 A Css Module is a CSS file in which all class names and animation names are scoped locally by default.
