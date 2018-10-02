@@ -29,7 +29,6 @@ const client = new ApolloClient({
 ```
 
 ## Query/mutation level
-app.scss
 ```javascript
 import RepositoryList from '../Repository';
 import Loading from '../Loading';
