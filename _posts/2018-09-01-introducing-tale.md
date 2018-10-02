@@ -1,100 +1,70 @@
 ---
 layout: post
-title:  "[React] Component Styling"
+title:  "[React] Error Handling"
 author: "Yena Park"
 ---
 
-3 ways to style react component
+The error handling can happen on two levels
 
-## CSS module
-A Css Module is a CSS file in which all class names and animation names are scoped locally by default.
+## Application level
+We need to install apollo-link-error for this. And also need apollo-link for combining two links.
 ```javascript
-import React, { Component } from 'react';
-import classNames from 'classnames/bind';
-import styles from './App.css';
-const cx = classNames.bind(styles);
+import { onError } from 'apollo-link-error';
 
-class App extends Component {
-  render() {
-    const isBlue = true;
-    return (
-      <div className={cx('box', {
-        blue: isBlue
-      })}>
-        
-      </div>
-    );
+const errorLink = onError(({ graphQLErrors, networkError }) => {
+  if (graphQLErrors) {
+    //do something with graphql error
   }
-}
+  if (networkError) {
+    //do something with network error
+  }
+});
 
-export default App;
+const link = ApolloLink.from([errorLink, httpLink]);
+
+const client = new ApolloClient({
+  link,
+  cache,
+});
 ```
 
-## Sass
+## Query/mutation level
 app.scss
 ```javascript
-@import "utils";
+import RepositoryList from '../Repository';
+import Loading from '../Loading';
+import ErrorMessage from '../Error';
+.
+.
+.
+const Profile = () => (
+  <Query query={GET_REPOSITORIES_OF_CURRENT_USER}>
+    {({data, loading, error}) => {
+      if (error) {
+        return <ErrorMessage error={error} />;
+      }
+      const { viewer } = data;
 
-.button {
-  background: $oc-green-7;
-  transition: all 0.2s ease-in;
-  display: inline-block;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  text-align: center;
-  color: white;
-  position: fixed;
-  font-size: 2rem;
-  font-weight: 500;
-  border-radius: 4px;
-  cursor: pointer;
+      if(loading || !viewer) {
+        return <Loading />;
+      }
 
-  @include place-at-center();
-
-  width: 1200px;
-
-  @include media("<huge") {
-    width: 1024px;
-  }
-
-  @include media("<large") {
-    width: 768px;
-  }
-
-  @include media("<medium") {
-    width: 90%;
-  }
-
-  &:hover {
-    background: $oc-green-6;
-  }
-
-  &:active {
-    margin-top: 3px;
-    background: $oc-green-8;
-  }
-}
+      return <RepositoryList repositories={viewer.repositories} />;
+    }}
+  </Query>
+);
 ```
-utils.scss
-```javascript
-@import "~open-color/open-color";
-@import "~include-media/dist/include-media";
+Whereas the ErrorMessage component could look like the following:
+```
+import React from 'react';
 
-$breakpoints: (
-  small: 376px,
-  medium: 768px,
-  large: 1024px,
-  huge: 1200px
+import './style.css';
+
+const ErrorMessage = ({ error }) => (
+  <div className="ErrorMessage">
+    <small>{error.toString()}</small>
+  </div>
 );
 
-$size: 100px;
-
-@mixin place-at-center() {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+export default ErrorMessage;
 ```
-
-## Styled-components
-
