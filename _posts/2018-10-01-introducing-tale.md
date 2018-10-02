@@ -54,7 +54,7 @@ const Profile = () => (
 );
 ```
 Whereas the ErrorMessage component could look like the following:
-```
+```javascript
 import React from 'react';
 
 import './style.css';
