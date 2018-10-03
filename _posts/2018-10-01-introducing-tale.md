@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[React] Error Handling"
+title:  "[React] Handling with apollo"
 author: "Yena Park"
 ---
 
@@ -52,18 +52,4 @@ const Profile = () => (
     }}
   </Query>
 );
-```
-Whereas the ErrorMessage component could look like the following:
-```javascript
-import React from 'react';
-
-import './style.css';
-
-const ErrorMessage = ({ error }) => (
-  <div className="ErrorMessage">
-    <small>{error.toString()}</small>
-  </div>
-);
-
-export default ErrorMessage;
 ```
