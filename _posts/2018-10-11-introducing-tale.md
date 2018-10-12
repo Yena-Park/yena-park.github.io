@@ -23,7 +23,7 @@ const FizzBuzz = (num) => {
 
 ## After refactoring
 ```javascript
-onst Fizz = (num) => {
+const Fizz = (num) => {
   return ((num) % 3 === 0) ? "Fizz" : "";
 };
 
