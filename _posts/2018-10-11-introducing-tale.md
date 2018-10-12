@@ -24,7 +24,7 @@ const FizzBuzz = (num) => {
 ## After refactoring
 ```javascript
 const Fizz = (num) => {
-  return ((num) % 3 === 0) ? "Fizz" : "";
+  return (num % 3 === 0) ? "Fizz" : "";
 };
 
 const Buzz = (num) => {
