@@ -8,7 +8,7 @@ author: "Yena Park"
 
 # Given same argument to the function, it should always return same output.
 How can we be certain that above metioned point holds while writing pure function?
-> ## Function must not use state of the program to compute its output.
+> ## Function must not use state of the program to compute its output.    
 ```javascript
 const x = 5 //x is a global variable
 const multiply = (y) => {
