@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Better Code] Goat Latin"
+title:  "[Algorithm] Goat Latin"
 author: "Yena Park"
 ---
 
