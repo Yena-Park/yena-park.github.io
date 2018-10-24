@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Better Code] Longest word in the world"
+title:  "[Algorithm] Longest word in the world"
 author: "Yena Park"
 ---
 
