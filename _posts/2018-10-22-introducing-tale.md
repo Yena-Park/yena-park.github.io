@@ -4,7 +4,7 @@ title:  "[Better Code] 5 ways to reverse a string in Javascript"
 author: "Yena Park"
 ---
 
-‘Write a function to reverse string’ is one of the most obvious algorithm questions that you can expect to be asked at a Javascript interview, especially so if are just starting your career as a software engineer.
+Write a function to reverse string’ is one of the most obvious algorithm questions that you can expect to be asked at a Javascript interview, especially so if are just starting your career as a software engineer.
 
 This blog is going to present 5 different solutions for this challenge.
 
