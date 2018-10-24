@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Better Code] Fizz Buzz"
+title:  "[Algorithm] Fizz Buzz"
 author: "Yena Park"
 ---
 
