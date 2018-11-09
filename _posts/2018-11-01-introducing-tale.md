@@ -5,7 +5,7 @@ author: "Yena Park"
 ---
 
 Determine if two words are anagrams of each other.
-Write a function to check whether two given strings are anagram of each other or not. An anagram of a string is another string that contains same characters, only the order of characters can be different. For example, “abcd” and “dabc” are anagram of each other.
+Write a function to check whether two given strings are anagram of each other or not. An anagram of a string is another string that contains same characters, only the order of characters can be different. For example, “abcd” and “dabc” are anagram of each other. So the result will be returned true.
 ```javascript
 const anagram = (a, b) => {
   a_ht = convertToHT(a);
@@ -42,5 +42,5 @@ const compareObjs = (a_ht, b_ht) => {
   return true;
 }
 
-console.log(anagram('abcbcgfd', 'abbccdfg'))
+console.log(anagram('abcbcgfd', 'abbccdfg')) //return 'true'
 ```
